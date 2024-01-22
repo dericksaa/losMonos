@@ -4,17 +4,19 @@
   padding: 0;
 }
 
-body{
-  overflow-x: hidden;
-}
-
 h2{
   font-size: 35pt;
 }
 
-h2,h4{
+h2{
   font-family: "Acme", sans-serif;
   color: #b2b4ac;
+}
+
+h4{
+  font-family: "Acme", sans-serif;
+  font-size: 20pt;
+  color: #17234dda;
 }
 
 p{
@@ -69,12 +71,12 @@ main {
 
 .select_menu_mobile {
   display: none;
-  flex-direction: column; /* Mostrar como una lista uno debajo del otro */
+  flex-direction:column; /* Mostrar como una lista uno debajo del otro */
   align-items: center;
 }
 
 .menu_derecho {
-  display: none;
+  display:none;
 }
 
 @media (max-width: 1000px) {
@@ -130,17 +132,16 @@ header {
 
 .img_us {
   aspect-ratio: 1.36;
-  border-radius: 15px;
   width: 100%;
 }
 
 .us1 {
-  background-image: url(./images/qs1.jpeg);
+  background-image: url(./images/Familia.jpg);
   background-size: cover;
 }
 
 .us2 {
-  background-image: url(./images/qs2.jpeg);
+  background-image: url(./images/Alejo.png);
   background-size: cover;
 }
 
@@ -173,18 +174,67 @@ header {
 }
 
 .mis{
-  aspect-ratio: 1.18;
-  border-radius: 10px;
-  width: 100%;
+  aspect-ratio: 1.35;
+  width: 95%;
   background-image: url(./images/mision.jpeg);
   background-size: cover;
 }
 
 .vis{
+  aspect-ratio: 1.7;
+  width: 95%;
+  background-image: url(./images/vision.jpeg);
+  background-size: cover;
+}
+
+.nshis{
+  width: 90%;
+  display: flex;
+  gap: 8%;
+}
+
+@media (max-width: 800px) {
+  .nshis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.nh {
+  aspect-ratio: 1;
+  width: 100%;
+}
+
+.nh1 {
+  background-image: url(./images/nh1.png);
+  background-size: cover;
+}
+
+.nh2 {
+  background-image: url(./images/nh2.png);
+  background-size: cover;
+}
+
+.nh3 {
+  background-image: url(./images/Nuestra_historia.jpg);
+  background-size: cover;
+}
+
+.ma1{
   aspect-ratio: 1.33;
   border-radius: 10px;
-  width: 100%;
-  background-image: url(./images/vision.jpeg);
+  width: 70%;
+  background-image: url(./images/memoria_2004.jpg);
+  background-size: cover;
+}
+
+.ma2{
+  aspect-ratio: 1.33;
+  border-radius: 10px;
+  width: 70%;
+  background-image: url(./images/memoria_2023.jpg);
   background-size: cover;
 }
 
@@ -238,24 +288,52 @@ header {
 }
 
 .biodiver{
-  width: 80%;
+  width: 100%;
   margin: 2rem auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
+.biodiver2{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.logos1{
+  width: 70%;
+  margin:auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+/* .logos2{
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+} */
 
 @media (max-width: 1200px){
-  .biodiver {
+  .biodiver,.biodiver2 {
       grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 590px){
-  .biodiver {
+  .biodiver,.biodiver2 {
       grid-template-columns: 1fr;
   }
+
+  .logos1 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
+
 
 .img_div{
   width: 100%;
@@ -264,21 +342,107 @@ header {
   padding: 1rem 1rem;
 }
 
+.logoss{
+  width: 80%;
+  background-size: cover;
+  aspect-ratio: 1;
+  padding: 1rem 1rem;
+}
+
 .bio1{
-  background-image: url(./images/carpintero.jpeg);
+  background-image: url(./images/Sarcoramphus_papa.JPG);
 }
 .bio2{
-  background-image: url(./images/serpiente.jpg);
+  background-image: url(./images/Saguinus_leucopus.jpg);
 }
 .bio3{
-  background-image: url(./images/rana.jpg);
+  background-image: url(./images/Bothrops_asper.jpg);
 }
 .bio4{
-  background-image: url(./images/titi.jpg);
+  background-image: url(./images/Trogon_caligatus.JPG);
+}
+.bio5{
+  background-image: url(./images/Lontra_longicaudis.jpg);
+}
+.bio6{
+  background-image: url(./images/Alouatta_seniculus.jpg);
+}
+.bio7{
+  background-image: url(./images/Hyalinobatrachium_tatayoi.jpg);
+}
+
+.logo1{
+  background-image: url(./images/Argos.png);
+}
+.logo2{
+  background-image: url(./images/Humboldt.png);
+}
+.logo3{
+  background-image: url(./images/Huella_viva_c.png);
+}
+.logo4{
+  background-image: url(./images/Natura.png);
+}
+.logo5{
+  background-image: url(./images/SAO.png);
+}
+.logo6{
+  background-image: url(./images/UNAL.png);
+}
+.logo7{
+  background-image: url(./images/udea.png);
+}
+.logo8{
+  background-image: url(./images/Unisarc.png);
+}
+.logo9{
+  background-image: url(./images/CES.png);
 }
 
 .section4{
   padding-top: 115px; 
+}
+
+
+.sdi {
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  align-items: center;
+  padding-top: 5px;
+  margin: 2rem auto;
+}
+
+@media screen and (max-width: 700px) {
+  .sdi {
+    grid-template-columns: 1fr; /* Cambia a una sola columna */
+    grid-gap: 10px; /* Espacio entre elementos en la columna */
+  }
+}
+
+.casc{
+  aspect-ratio: 0.75;
+  width: 90%;
+  background-image: url(./images/cascada.jpeg);
+  background-size: cover;
+  margin: auto;
+}
+
+.mir{
+  aspect-ratio: 0.75;
+  width: 90%;
+  background-image: url(./images/mirador.jpeg);
+  background-size: cover;
+  margin: auto;
+
+}
+
+.rio{
+  aspect-ratio: 0.75;
+  width: 90%;
+  background-image: url(./images/Rio1.jpg);
+  background-size: cover;
+  margin: auto;
+
 }
 
 .sites{
@@ -304,7 +468,7 @@ header {
 .img_sit{
   width: 100%;
   background-size: cover;
-  aspect-ratio: 0.8;
+  aspect-ratio: 0.75;
   padding: 1rem 1rem;
 }
 
@@ -315,7 +479,7 @@ header {
   background-image: url(./images/mirador.jpeg);
 }
 .sit3{
-  background-image: url(./images/rio.jpeg);
+  background-image: url(./images/Rio1.jpg)
 }
 
 .section5{
@@ -323,18 +487,70 @@ header {
 }
 
 ul{
-  text-align: left;
+  text-align: center;
   padding: 0 5% 5% 5%;
 }
 
-.section5 div{
-  width: 80%;
-  max-width: 600px;
+.modales {
+  aspect-ratio: 1.33;
+  width: 100%;
+  display: flex;
+  gap: 8%;
+}
+
+.casc1 {
+  background-image: url(./images/Cascada1.jpg);
   background-size: cover;
-  aspect-ratio: 1;
-  padding: 1rem 1rem;
-  background-image: url(./images/collage.png);
-  margin: auto;
+}
+
+.sende{
+  background-image: url(./images/Mapa1.jpg);
+  background-size: cover;
+}
+
+.rio2{
+  background-image: url(./images/Rio2.jpg);
+  background-size: cover;
+}
+
+.camping{
+  background-image: url(./images/camping.jpg);
+  background-size: cover;
+}
+
+.hospedaje{
+  background-image: url(./images/Hospedaje.jpg);
+  background-size: cover;
+}
+
+.recorridos{
+  background-image: url(./images/Recorridos.png);
+  background-size: cover;
+}
+
+.piscina{
+  background-image: url(./images/Piscina.png);
+  background-size: cover;
+}
+
+.vacas{
+  background-image: url(./images/Vacas.jpg);
+  background-size: cover;
+}
+
+.cascada2{
+  background-image: url(./images/Cascada2.jpg);
+  background-size: cover;
+}
+
+.activ{
+  background-image: url(./images/Actividades.jpg);
+  background-size: cover;
+}
+
+.mieles{
+  background-image: url(./images/Mieles.jpg);
+  background-size: cover;
 }
 
 .section6{
@@ -346,10 +562,37 @@ ul{
   height: 2rem;
 }
 
-.section6 p {
-  color: #b2b4ac;
-}
+
 
 .section6 div {
   padding-bottom: 20%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
 }
