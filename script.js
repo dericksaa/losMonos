@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+//probando comentario de cambio 2025
 document.addEventListener("DOMContentLoaded", function () {
     const modalTriggers = document.querySelectorAll(".modal-trigger");
     const closeButtons = document.querySelectorAll(".close-modal");
